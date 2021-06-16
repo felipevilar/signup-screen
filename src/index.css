@@ -1,0 +1,126 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  @font-face {
+    font-family: Poppins;
+    font-weight: 400;
+    src: url("./fonts/Poppins-Regular.ttf") format("truetype");
+  }
+  @font-face {
+    font-family: Poppins;
+    font-weight: 500;
+    src: url("./fonts/Poppins-Medium.ttf") format("truetype");
+  }
+  @font-face {
+    font-family: Poppins;
+    font-weight: 600;
+    src: url("./fonts/Poppins-SemiBold.ttf") format("truetype");
+  }
+  @font-face {
+    font-family: Poppins;
+    font-weight: 700;
+    src: url("./fonts/Poppins-Bold.ttf") format("truetype");
+  }
+
+  body {
+    @apply w-full;
+    @apply h-screen;
+    @apply overflow-scroll;
+    @apply bg-mred;
+    @apply bg-mobile;
+    @apply md:bg-desktop;
+    @apply bg-center;
+    font-family: Poppins, Helvetica, Arial, sans-serif;
+    font-size: 16px;
+  }
+
+  .drop-shadow {
+    filter: drop-shadow(0 10px 0 hsl(0, 0%, 35%, 0.2));
+  }
+  .inner-shadow {
+    box-shadow: inset 0px -5px 0px hsl(0, 0%, 35%, 0.2);
+  }
+
+  .form-signup {
+    width: 540px;
+    height: 475px;
+    @apply bg-white;
+    @apply border-2;
+    @apply rounded-xl;
+    @apply border-gray-100;
+    @apply pt-5;
+    @apply px-5;
+    @apply w-full;
+  }
+
+  .form-signup input {
+    @apply my-2;
+  }
+
+  .form-signup input:first-child {
+    @apply mt-0;
+  }
+  .form-signup p {
+    @apply inline-flex;
+    @apply text-grayblue;
+    @apply text-xs;
+    @apply font-medium;
+    @apply justify-center;
+  }
+
+  .form-signup a {
+    @apply text-mred;
+    @apply font-bold;
+    @apply text-xs;
+  }
+
+  .form-input::placeholder {
+    color: #6a696e;
+  }
+
+  .form-input {
+    @apply w-full;
+    @apply h-14;
+    @apply border border-gray-300;
+    @apply rounded-md;
+    @apply px-8;
+    @apply py-3;
+    @apply focus:border-mblue;
+    @apply focus:outline-none;
+    @apply font-medium;
+  }
+
+  .form-button {
+    @apply bg-mgreen;
+    @apply my-2;
+    @apply tracking-wider;
+    @apply font-medium;
+    @apply text-white;
+    @apply text-sm;
+  }
+
+  .tryit {
+    @apply h-16;
+    @apply bg-mblue;
+    @apply text-white;
+    @apply mb-6;
+    @apply py-1;
+    @apply inline-flex;
+    @apply justify-center;
+    @apply items-center;
+  }
+
+  .btn {
+    @apply w-full;
+    @apply h-14;
+    @apply rounded-xl;
+    @apply px-8;
+    @apply py-3;
+    transition: transform 0.1s;
+  }
+  .btn:hover {
+    transform: scale(1.02);
+  }
+}

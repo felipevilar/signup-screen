@@ -6,6 +6,10 @@
     "serve": "vite preview"
   },
   "dependencies": {
+    "@fortawesome/vue-fontawesome": "^3.0.0-4",
+    "@heroicons/vue": "^1.0.1",
+    "@vuelidate/core": "^2.0.0-alpha.19",
+    "@vuelidate/validators": "^2.0.0-alpha.17",
     "vue": "^3.0.5"
   },
   "devDependencies": {
